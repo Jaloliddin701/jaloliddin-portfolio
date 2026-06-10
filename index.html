@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaloliddin Photography | Portfolio & Vizitka</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Jaloliddin - professional portret, ko'cha va tabiat fotografi. Uning eng sara ijodiy ishlari portfoliosi va aloqa ma'lumotlari.">
+  <meta name="keywords" content="Jaloliddin, fotograf, portfolio, fotostudiya, portret, ko'cha suratlari, Toshkent fotograf">
+  <meta name="author" content="Jaloliddin">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo-brand">
+        <img src="logo.png" alt="Jaloliddin Photography" class="nav-logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menuni ochish">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Bosh sahifa</a></li>
+        <li><a href="#about" class="nav-link">Men haqimda</a></li>
+        <li><a href="#gallery" class="nav-link">Ijodiy ishlar</a></li>
+        <li><a href="#contact" class="nav-link">Aloqa</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="glass-card">
+        <span class="hero-subtitle">Professional Fotograf</span>
+        <h1 class="hero-title">Dunyo Go'zalligini Obzorga Muhrlayman</h1>
+        <p class="hero-desc">Har bir lahzada hikoya, har bir tasvirda his-tuyg'u bor. Men o'sha lahzalar va hislarni eng oliy darajada suratga olaman.</p>
+        <div class="hero-actions">
+          <a href="#gallery" class="btn btn-primary">Portfolioni ko'rish <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-secondary">Bog'lanish</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Pastga aylantiring</span>
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-image-card">
+            <!-- Premium Placeholder Image representing the photographer -->
+            <img src="profile.jpg" alt="Jaloliddin" class="about-img">
+            <div class="about-experience-badge">
+              <span class="badge-num">5+</span>
+              <span class="badge-text">Yillik tajriba</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-info">
+          <span class="section-subtitle">Mening tarixim</span>
+          <h2 class="section-title">Salom, men Jaloliddin!</h2>
+          <p class="about-text">
+            Fotografiya men uchun shunchaki kasb emas, bu — hayotning qayta takrorlanmas lahzalarini san'at asariga aylantirish yo'lidir. Oxirgi 5 yil davomida men portretlar, shahar ko'chalari va tabiat manzaralarining sirli va jozibador tomonlarini kameramga muhrlab kelmoqdaman.
+          </p>
+          <p class="about-text">
+            Har bir surat o'ziga xos dunyoqarash va yorug'likning ajoyib o'yinidir. Men zamonaviy uskunalar va o'ziga xos ishlov berish (retush) uslubidan foydalanib, rasmlarga o'zgacha joziba bag'ishlayman.
+          </p>
+          
+          <div class="services-list">
+            <div class="service-item">
+              <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+              <h3>Portret Suratlar</h3>
+            </div>
+            <div class="service-item">
+              <div class="service-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+              <h3>Tabiat & Manzara</h3>
+            </div>
+            <div class="service-item">
+              <div class="service-icon"><i class="fa-solid fa-city"></i></div>
+              <h3>Ko'cha (Street)</h3>
+            </div>
+            <div class="service-item">
+              <div class="service-icon"><i class="fa-solid fa-ring"></i></div>
+              <h3>Tadbirlar & To'ylar</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Galereya</span>
+        <h2 class="section-title">Ijodiy ishlarimdan namunalar</h2>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">Barchasi</button>
+        <button class="filter-btn" data-filter="portrait">Portret</button>
+        <button class="filter-btn" data-filter="landscape">Tabiat</button>
+        <button class="filter-btn" data-filter="street">Ko'cha</button>
+        <button class="filter-btn" data-filter="event">Tadbirlar</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Portrait 1 -->
+        <div class="gallery-item portrait" data-title="Nigoh sehri" data-category="Portret">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Portret surat">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Nigoh sehri</h3>
+              <p>Portret</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Landscape 1 -->
+        <div class="gallery-item landscape" data-title="Tog'lar salobati" data-category="Tabiat">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Tabiat surati">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Tog'lar salobati</h3>
+              <p>Tabiat</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Street 1 -->
+        <div class="gallery-item street" data-title="Tun chiroqlari" data-category="Ko'cha">
+          <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=800&q=80" alt="Ko'cha surati">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Tun chiroqlari</h3>
+              <p>Ko'cha</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Event 1 -->
+        <div class="gallery-item event" data-title="Shodiyona lahzalar" data-category="Tadbirlar">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Tadbir surati">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Shodiyona lahzalar</h3>
+              <p>Tadbirlar</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Portrait 2 -->
+        <div class="gallery-item portrait" data-title="Tabassum" data-category="Portret">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Portret surat 2">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Tabassum</h3>
+              <p>Portret</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Landscape 2 -->
+        <div class="gallery-item landscape" data-title="Sehrli o'rmon" data-category="Tabiat">
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Tabiat surati 2">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Sehrli o'rmon</h3>
+              <p>Tabiat</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Street 2 -->
+        <div class="gallery-item street" data-title="Shahar hayoti" data-category="Ko'cha">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=80" alt="Ko'cha surati 2">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Shahar hayoti</h3>
+              <p>Ko'cha</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="gallery-item event" data-title="Yorqin konsert" data-category="Tadbirlar">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Tadbir surati 2">
+          <div class="item-overlay">
+            <div class="overlay-info">
+              <h3>Yorqin konsert</h3>
+              <p>Tadbirlar</p>
+            </div>
+            <div class="overlay-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Oldingi rasm"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Lightbox View">
+      <div class="lightbox-caption" id="lightboxCaption">
+        <h3 id="captionTitle">Rasm nomi</h3>
+        <p id="captionCategory">Toifa</p>
+      </div>
+    </div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Keyingi rasm"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <span class="section-subtitle">Hamkorlik</span>
+          <h2 class="section-title">Keling, birga loyihalar yaratamiz!</h2>
+          <p class="contact-desc">Sizga ajoyib fotosessiya yoki shaxsiy loyihalar uchun yordam kerakmi? Quyidagi ma'lumotlar orqali bog'lanishingiz yoki formani to'ldirishingiz mumkin.</p>
+          
+          <div class="contact-details">
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="detail-text">
+                <h4>Elektron pochta</h4>
+                <p><a href="mailto:jaloliddin.701@icloud.com">jaloliddin.701@icloud.com</a></p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="detail-text">
+                <h4>Telefon raqam</h4>
+                <p><a href="tel:+998919197701">+998 (91) 919-77-01</a></p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="detail-text">
+                <h4>Manzil</h4>
+                <p>Xorazm viloyati, Urganch tumani, O'zbekiston</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://instagram.com/jaloliddin__masharipov_" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/jaloliddin7701" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://behance.net" target="_blank" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://500px.com" target="_blank" aria-label="500px"><i class="fa-brands fa-500px"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Xabaringiz jo\'natildi! Tez orada siz bilan bog\'lanamiz.'); this.reset();">
+            <div class="form-group">
+              <label for="name">Ismingiz</label>
+              <input type="text" id="name" placeholder="Ismingizni kiriting" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email manzilingiz</label>
+              <input type="email" id="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Xabar matni</label>
+              <textarea id="message" rows="5" placeholder="Xabaringizni yozing..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Xabarni jo'natish</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-content">
+        <p>&copy; 2026 Jaloliddin Photography. Barcha huquqlar himoyalangan.</p>
+        <p class="footer-credit">Designed with <i class="fa-solid fa-heart" style="color: var(--primary);"></i> by Antigravity</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
